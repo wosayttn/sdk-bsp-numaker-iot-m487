@@ -226,9 +226,6 @@
 #define UTEST_THR_STACK_SIZE 4096
 #define UTEST_THR_PRIORITY 20
 
-/* RT-Thread Utestcases */
-
-
 /* RT-Thread online packages */
 
 /* IoT - internet of things */
@@ -272,7 +269,7 @@
 
 /* system packages */
 
-/* rt_kprintf: enhanced rt_kprintf packages */
+/* enhanced kernel services */
 
 
 /* acceleration: Assembly language or algorithmic acceleration packages */
@@ -308,7 +305,6 @@
 
 #define NU_PKG_USING_UTILS
 #define NU_PKG_USING_DEMO
-#define NU_PKG_USING_BMX055
 #define NU_PKG_USING_NAU88L25
 
 /* Hardware Drivers Config */
@@ -373,7 +369,6 @@
 
 #define BSP_USING_NULINKME
 #define BOARD_USING_ESP8266
-#define BOARD_USING_BMX055
 #define BOARD_USING_NAU88L25
 #define BOARD_USING_STORAGE_SDCARD
 #define BOARD_USING_STORAGE_SPIFLASH
@@ -381,7 +376,5 @@
 
 /* Board extended module drivers */
 
-#define BOARD_USE_UTEST
-#define UTEST_CMD_PREFIX "bsp.nuvoton.numaker-iot-m487.test.utest."
 
 #endif
