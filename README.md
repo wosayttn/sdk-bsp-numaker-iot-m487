@@ -1,1 +1,2 @@
-# sdk-bsp-numaker-iot-m487
+# rt-studio
+This is repository of rt-studio sdk-bsp 
