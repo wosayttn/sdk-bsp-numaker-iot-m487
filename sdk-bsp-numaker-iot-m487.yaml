@@ -2,7 +2,7 @@ board:
   buy_url_cn: https://direct.nuvoton.com/tw/numaker-iot-m487
   buy_url_global: https://direct.nuvoton.com/tw/numaker-iot-m487
   debug_interface: SWD
-  debugger: DAP-LINK
+  debugger: NU-LINK
   description_en: NUMAKER-IOT-M487 provides multiple networking, interfaces,
     audio recording, playback functions, and flexible extended data storage.
   description_zh: NUMAKER-IOT-M487 的主控板采用通用接口设计，提供兼容于 Arduino UNO
