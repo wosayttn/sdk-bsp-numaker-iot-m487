@@ -112,7 +112,7 @@
                   <listOptionValue builtIn="false" value="&quot;${workspace_loc://${ProjName}//rt-thread/libcpu/arm/cortex-m4}&quot;" />
                 </option>
                 <option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.defs.100549972" name="Defined symbols (-D)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.defs" useByScannerDiscovery="true" />
-                <option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.other.2133065240" name="Other compiler flags" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.other" useByScannerDiscovery="true" value=" -mcpu=cortex-m4 -mthumb -ffunction-sections -fdata-sections -Wuninitialized -O2 -gdwarf-2" valueType="string" />
+                <option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.other.2133065240" name="Other compiler flags" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.other" useByScannerDiscovery="true" value=" -mcpu=cortex-m4 -mthumb -ffunction-sections -fdata-sections -Wuninitialized -O2 -gdwarf-2 -g" valueType="string" />
                 <option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.include.files.714348818" name="Include files (-include)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.include.files" useByScannerDiscovery="true">
                   <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rtconfig_preinc.h}&quot;" />
                 </option>
