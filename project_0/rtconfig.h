@@ -13,6 +13,7 @@
 #define RT_TICK_PER_SECOND 1000
 #define RT_USING_OVERFLOW_CHECK
 #define RT_USING_HOOK
+#define RT_HOOK_USING_FUNC_PTR
 #define RT_USING_IDLE_HOOK
 #define RT_IDLE_HOOK_LIST_SIZE 4
 #define IDLE_THREAD_STACK_SIZE 1024
@@ -35,6 +36,7 @@
 
 #define RT_USING_MEMPOOL
 #define RT_USING_SMALL_MEM
+#define RT_USING_SMALL_MEM_AS_HEAP
 #define RT_USING_HEAP
 
 /* Kernel Device Object */
@@ -43,7 +45,7 @@
 #define RT_USING_CONSOLE
 #define RT_CONSOLEBUF_SIZE 256
 #define RT_CONSOLE_DEVICE_NAME "uart0"
-#define RT_VER_NUM 0x40004
+#define RT_VER_NUM 0x40100
 #define ARCH_ARM
 #define RT_USING_CPU_FFS
 #define ARCH_ARM_CORTEX_M
@@ -78,6 +80,7 @@
 /* Device virtual file system */
 
 #define RT_USING_DFS
+#define DFS_USING_POSIX
 #define DFS_USING_WORKDIR
 #define DFS_FILESYSTEMS_MAX 8
 #define DFS_FILESYSTEM_TYPES_MAX 4
@@ -102,7 +105,6 @@
 /* Device Drivers */
 
 #define RT_USING_DEVICE_IPC
-#define RT_PIPE_BUFSZ 64
 #define RT_USING_SYSTEM_WORKQUEUE
 #define RT_SYSTEM_WORKQUEUE_STACKSIZE 2048
 #define RT_SYSTEM_WORKQUEUE_PRIORITY 23
@@ -118,6 +120,7 @@
 #define RT_USING_ADC
 #define RT_USING_PWM
 #define RT_USING_PM
+#define PM_TICKLESS_THRESHOLD_TIME 2
 #define RT_USING_RTC
 #define RT_USING_SPI
 #define RT_USING_QSPI
@@ -177,10 +180,19 @@
 
 /* POSIX layer and C standard library */
 
-#define RT_USING_LIBC
-#define RT_LIBC_USING_TIME
 #define RT_LIBC_DEFAULT_TIMEZONE 8
-#define RT_USING_POSIX
+
+/* POSIX (Portable Operating System Interface) layer */
+
+#define RT_USING_POSIX_FS
+#define RT_USING_POSIX_DEVIO
+#define RT_USING_POSIX_POLL
+#define RT_USING_POSIX_SELECT
+
+/* Interprocess Communication (IPC) */
+
+
+/* Socket is in the 'Network' category */
 
 /* Network */
 
@@ -225,6 +237,9 @@
 #define RT_USING_UTEST
 #define UTEST_THR_STACK_SIZE 4096
 #define UTEST_THR_PRIORITY 20
+
+/* RT-Thread Utestcases */
+
 
 /* RT-Thread online packages */
 
@@ -272,6 +287,9 @@
 /* enhanced kernel services */
 
 
+/* POSIX extension functions */
+
+
 /* acceleration: Assembly language or algorithmic acceleration packages */
 
 
@@ -305,6 +323,7 @@
 
 #define NU_PKG_USING_UTILS
 #define NU_PKG_USING_DEMO
+#define NU_PKG_USING_BMX055
 #define NU_PKG_USING_NAU88L25
 
 /* Hardware Drivers Config */
@@ -369,6 +388,7 @@
 
 #define BSP_USING_NULINKME
 #define BOARD_USING_ESP8266
+#define BOARD_USING_BMX055
 #define BOARD_USING_NAU88L25
 #define BOARD_USING_STORAGE_SDCARD
 #define BOARD_USING_STORAGE_SPIFLASH
@@ -376,5 +396,7 @@
 
 /* Board extended module drivers */
 
+#define BOARD_USE_UTEST
+#define UTEST_CMD_PREFIX "bsp.nuvoton.numaker-iot-m487.test.utest."
 
 #endif
